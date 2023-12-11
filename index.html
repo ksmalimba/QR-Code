@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .qrcode-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            padding: 16px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        @media (max-width: 767px) {
+            .qrcode-container {
+                width: 80%;
+                margin: 20px auto;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 768px) {
+            .qrcode-container {
+                width: 300px;
+                margin: 20px;
+            }
+        }
+    </style>
+    <title>QR Code Component</title>
+</head>
+<body>
+
+    <div class="qrcode-container">
+        <img src="./images/image-qr-code.png" alt="QR Code">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Khayelihle Malimba</a>.
+          Improve your front-end skills by building projects
+         Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+    </div>
+</body>
+</html>
